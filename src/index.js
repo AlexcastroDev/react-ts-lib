@@ -3,10 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SwapiProvider } from "portal"
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <SwapiProvider>
+      <App />
+    </SwapiProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
